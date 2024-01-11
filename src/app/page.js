@@ -12,9 +12,8 @@ export default function Home() {
 
   useEffect(() => {
 
-
   /* API GET
-    fetch('https://wayi.league-funny.com/api/task')
+    fetch(`https://wayi.league-funny.com/api/task`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.statusText}`);
@@ -163,7 +162,7 @@ export default function Home() {
 
   /* API POST
     try {
-      const response = await fetch('https://wayi.league-funny.com/api/task', {
+      const response = await fetch(`https://wayi.league-funny.com/api/task`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -205,7 +204,7 @@ export default function Home() {
 
   /* API PUT
     try {
-      const response = await fetch('https://wayi.league-funny.com/api/task/${id}', {
+      const response = await fetch(`https://wayi.league-funny.com/api/task/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -242,7 +241,7 @@ export default function Home() {
 
   /* API PATCH
     try {
-      const response = await fetch('https://wayi.league-funny.com/api/task/${id}', {
+      const response = await fetch(`https://wayi.league-funny.com/api/task/${id}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -269,7 +268,7 @@ export default function Home() {
 
   /* API DELETE
     try {
-      const response = await fetch('https://wayi.league-funny.com/api/task/${id}', {
+      const response = await fetch(`https://wayi.league-funny.com/api/task/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
