@@ -147,6 +147,17 @@ export default function Home() {
       setError("必填欄位為空值");
       return;
     }
+
+    if(inputname.length>10){
+      setError("名稱超過長度上限");
+      return;
+    }
+
+    if(inputdspt.length>30 ){
+      setError("描述超過長度上限");
+      return;
+    }
+
     setError("");
     const lastId = todos[todos.length - 1].id;
 
@@ -190,8 +201,18 @@ export default function Home() {
       setError("必填欄位為空值");
       return;
     }
-    setError("");
 
+    if(inputname.length>10){
+      setError("名稱超過長度上限");
+      return;
+    }
+
+    if(inputdspt.length>30 ){
+      setError("描述超過長度上限");
+      return;
+    }
+
+    setError("");
     const newTask = {
       "name": inputname,
       "description": inputdspt,
